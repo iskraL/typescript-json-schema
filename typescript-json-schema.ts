@@ -215,11 +215,11 @@ export class JsonSchemaGenerator {
         }
 
         // the comments for a symbol
-        let comments = symbol.getDocumentationComment();
+        // let comments = symbol.getDocumentationComment();
 
-        if (comments.length) {
-            definition.description = comments.map(comment => comment.kind === "lineBreak" ? comment.text : comment.text.trim().replace(/\r\n/g, "\n")).join("");
-        }
+        // if (comments.length) {
+        //     definition.description = comments.map(comment => comment.kind === "lineBreak" ? comment.text : comment.text.trim().replace(/\r\n/g, "\n")).join("");
+        // }
 
         // jsdocs are separate from comments
         const jsdocs = symbol.getJsDocTags();
